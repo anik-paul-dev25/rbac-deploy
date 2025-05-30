@@ -1,0 +1,8 @@
+{
+    "name": "rbac/rbac-system",
+    "description": "Role-Based Access Control System",
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

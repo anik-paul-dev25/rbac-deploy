@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: rbac-blog
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: DB_HOST
+        value: db4free.net
+      - key: DB_NAME
+        value: rbacsytem
+      - key: DB_USER
+        value: anik24
+      - key: DB_PASS
+        value: anik2425
+      - key: DB_PORT
+        value: 3306
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USERNAME
+        value: greatgatsbyontheway2.o@gmail.com
+      - key: SMTP_PASSWORD
+        value: bini xcwf zgto jfhb
+    healthCheckPath: /
+    disk:
+      name: uploads
+      mountPath: /var/www/html/Uploads
+      sizeGB: 1
